@@ -1,6 +1,6 @@
 {
   "name": "computus",
-  "version": "0.1.1-0",
+  "version": "0.1.1-1",
   "license": "MIT",
   "author": "Rasmus Nørskov",
   "main": "dist/index.js",
