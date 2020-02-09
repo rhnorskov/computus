@@ -10,6 +10,14 @@
     "julian",
     "holiday"
   ],
+  "homepage": "https://github.com/rhnorskov/computus#readme",
+  "bugs": {
+    "url": "https://github.com/rhnorskov/computus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhnorskov/computus.git"
+  },
   "license": "MIT",
   "author": "Rasmus Nørskov",
   "main": "dist/index.js",
