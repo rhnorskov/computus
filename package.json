@@ -21,7 +21,7 @@
     "build": "tsdx build",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "release": "np",
+    "release": "np --no-publish",
     "start": "tsdx watch",
     "test": "tsdx test"
   },
