@@ -3,6 +3,8 @@
 [![CircleCI](https://img.shields.io/circleci/build/github/rhnorskov/computus)](https://circleci.com/gh/rhnorskov/computus)
 [![Downloads](https://img.shields.io/npm/dw/computus)](https://npmjs.com/computus)
 
+Compute easter day in the gregorian and julian calendar
+
 ## Install
 
 ```
