@@ -15,11 +15,12 @@ export function gregorian(year: number): Date {
   const c = year % 100;
   const d = integerDivision(b, 4);
   const e = b % 4;
-  const g = integerDivision(8 * b + c, 25);
+  const f = integerDivision(b + 8, 25);
+  const g = integerDivision(b - f + 1, 3);
   const h = (19 * a + b - d - g + 15) % 30;
   const i = integerDivision(c, 4);
   const k = c % 4;
-  const l = (2 * e + 2 * i - h - k + 32) % 7;
+  const l = (32 + 2 * e + 2 * i - h - k) % 7;
   const m = integerDivision(a + 11 * h + 22 * l, 451);
   const month = integerDivision(h + l - 7 * m + 114, 31);
   const day = ((h + l - 7 * m + 114) % 31) + 1;
