@@ -1,50 +1,48 @@
 {
-  "name": "computus",
-  "version": "1.0.6",
-  "description": "Compute easter day in the gregorian and julian calendar",
-  "keywords": [
-    "computus",
-    "easter",
-    "date",
-    "gregorian",
-    "julian",
-    "holiday"
-  ],
-  "homepage": "https://github.com/rhnorskov/computus#readme",
-  "bugs": {
-    "url": "https://github.com/rhnorskov/computus/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rhnorskov/computus.git"
-  },
-  "license": "MIT",
-  "author": "Rasmus Nørskov",
-  "main": "dist/index.js",
-  "module": "dist/computus.esm.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsdx build",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "release": "np --no-publish",
-    "start": "tsdx watch",
-    "test": "tsdx test"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "husky": "^6.0.0",
-    "np": "^7.5.0",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.2.0",
-    "typescript": "^4.2.4"
-  }
+	"name": "computus",
+	"version": "1.0.6",
+	"description": "Compute easter day in the gregorian and julian calendar",
+	"keywords": [
+		"computus",
+		"easter",
+		"date",
+		"gregorian",
+		"julian",
+		"holiday"
+	],
+	"homepage": "https://github.com/rhnorskov/computus#readme",
+	"bugs": {
+		"url": "https://github.com/rhnorskov/computus/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rhnorskov/computus.git"
+	},
+	"license": "MIT",
+	"author": "Rasmus Nørskov",
+	"main": "dist/index.js",
+	"module": "dist/computus.esm.js",
+	"typings": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"src"
+	],
+	"scripts": {
+		"start": "tsdx watch",
+		"build": "tsdx build",
+		"test": "tsdx test",
+		"lint": "tsdx lint",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@rhnorskov/eslint-config": "^1.0.0",
+		"@rhnorskov/prettier-config": "^1.0.0",
+		"husky": "^6.0.0",
+		"tsdx": "^0.14.1",
+		"tslib": "^2.2.0",
+		"typescript": "^4.2.4"
+	},
+	"engines": {
+		"node": ">=10"
+	}
 }
