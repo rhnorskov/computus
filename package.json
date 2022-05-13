@@ -39,7 +39,7 @@
     "format": "prettier --write .",
     "lint": "eslint --fix .",
     "prepare": "husky install",
-    "release": "np",
+    "release": "npm run build && np",
     "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
   },
   "devDependencies": {
