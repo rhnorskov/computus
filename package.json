@@ -29,7 +29,10 @@
   "unpkg": "./dist/computus.umd.js",
   "module": "./dist/computus.module.js",
   "source": "src/main.ts",
-  "types": "dist/computus.d.ts",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
