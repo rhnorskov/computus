@@ -1,9 +1,9 @@
 # Computus
 
-[![CircleCI](https://img.shields.io/circleci/build/github/rhnorskov/computus)](https://circleci.com/gh/rhnorskov/computus)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/rhnorskov/computus/ci/master)
 [![Downloads](https://img.shields.io/npm/dw/computus)](https://npmjs.com/computus)
 
-Compute easter day in the gregorian and julian calendar
+Compute easter day in the gregorian calendar
 
 ## Install
 
@@ -11,26 +11,10 @@ Compute easter day in the gregorian and julian calendar
 npm install computus
 ```
 
-```
-yarn install computus
-```
-
 ## Usage
 
-CommonJS
-
 ```
-const computus = require("computus");
+import { computus } from "computus";
 
-const gregorianEaster = computus.gregorian(2020);
-const julianEaster = computus.julian(2020);
-```
-
-ECMAScript Module
-
-```
-import { gregorian, julian } from "computus";
-
-const gregorianEaster = gregorian(2020);
-const julianEaster = julian(2020);
+const easter = computus(2020);
 ```

@@ -1,13 +1,12 @@
 {
   "name": "computus",
   "version": "2.0.2",
-  "description": "Compute easter day in the gregorian and julian calendar",
+  "description": "Compute easter day in the gregorian calendar",
   "keywords": [
     "computus",
     "easter",
     "date",
     "gregorian",
-    "julian",
     "holiday"
   ],
   "homepage": "https://github.com/rhnorskov/computus#readme",
@@ -55,6 +54,7 @@
     "ts-jest": "^28.0.2"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.x",
+    "npm": ">=6.x"
   }
 }
