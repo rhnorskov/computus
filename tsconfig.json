@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "module": "es2022",
-    "target": "es2020"
-  }
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
