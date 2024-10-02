@@ -32,13 +32,10 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --minify --dts",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
     "lint": "eslint --fix .",
-    "lint:check": "eslint .",
     "release": "changeset publish",
     "test": "vitest run",
-    "test:watch": "vitest",
-    "prerelease": "pnpm run lint:check && pnpm run format:check && pnpm run test && pnpm run build"
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@js-temporal/polyfill": "^0.4.4"

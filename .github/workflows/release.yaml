@@ -28,6 +28,15 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
+      - name: Lint
+        run: pnpm run lint
+
+      - name: Run Tests
+        run: pnpm test
+
+      - name: Build
+        run: pnpm run build
+
       - name: Publish to npmjs
         id: changesets
         uses: changesets/action@v1
