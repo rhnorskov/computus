@@ -1,5 +1,11 @@
 # computus
 
+## 3.0.1
+
+### Patch Changes
+
+- d2bef7b: Fixed package not being built before release
+
 ## 3.0.0
 
 ### Major Changes
