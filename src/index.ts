@@ -1,3 +1,3 @@
-import { computus } from "./computus";
+import { computus } from "./computus.ts";
 
 export { computus, computus as default };

@@ -7,6 +7,11 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
 jobs:
   release:
     name: Release
@@ -16,20 +21,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "lts/*"
+          node-version-file: .node-version
+          registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Lint
-        run: pnpm run lint
+      - name: Check
+        run: pnpm run check
 
       - name: Run Tests
         run: pnpm test
