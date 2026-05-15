@@ -20,33 +20,30 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v6
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version-file: ".node-version"
           registry-url: "https://registry.npmjs.org"
-          cache: "pnpm"
+          cache: "npm"
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm ci
 
       - name: Check
-        run: pnpm run check
+        run: npm run check
 
       - name: Run Tests
-        run: pnpm test
+        run: npm test
 
       - name: Build
-        run: pnpm run build
+        run: npm run build
 
       - name: Publish to npmjs
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
+          publish: npm run release
           commit: "chore: release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
